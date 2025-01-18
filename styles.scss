@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(33, 33, 116);
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header {
+  padding: 20px;
+
+  h1 {
+    font-size: 2rem;
+    font-size: clamp(2rem, 0.79rem + 2.05vw, 3.25rem);
+  }
+
+  p {
+    margin: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+  }
+}
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  img {
+    border-radius: 5%;
+    border: 5px solid rgb(221, 105, 105);
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+
+  .card {
+    border: 1px solid white;
+    height: 200px;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0.3rem 1rem;
+  }
+}
